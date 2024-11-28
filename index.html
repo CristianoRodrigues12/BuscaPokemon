@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Busca Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="./assets/pokemon-logo.svg" alt="Logo Pokémon">
+            <div class="search">
+                <label class="sr-only" for="input-search">Digite o nome do Pokémon</label>
+                <input id="input-search" type="text" placeholder="Digite o nome, ou número do Pokémon">
+                <button class="add">
+                    <img src="./assets/pokeball .png" alt="Pokébola">
+                    Buscar Pokémon
+                </button>
+            </div>
+        </header>
+        <div class="table-container">
+           
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pokémon</th>
+                        <th>ID</th>
+                        <th>Tipo</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
