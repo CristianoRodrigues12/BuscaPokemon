@@ -10,13 +10,21 @@ export class FavoritesView extends Favorites {
 
     onAdd() {
         const addButton = this.root.querySelector('.search button');
-        addButton.onclick = () => {
-            const inputField = this.root.querySelector('.search input');
+        const inputField = this.root.querySelector('.search input');
+    
+        const handleAdd = () => {
             const { value } = inputField;
-
             if (value.trim() !== "") {
                 this.add(value);
                 inputField.value = "";
+            }
+        };    
+        
+        addButton.onclick = handleAdd;    
+       
+        inputField.onkeypress = (event) => {
+            if (event.key === "Enter") {
+                handleAdd();
             }
         };
     }
